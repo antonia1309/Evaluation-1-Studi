@@ -11,10 +11,15 @@ ul, ol{
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 html{
   scroll-behavior: smooth;
+  height: 100%;
+}
+body{
+  min-height: 100%;
+  /*position: relative;*/
 }
 
 /*Style général*/
@@ -50,10 +55,17 @@ h2{
   color: white;
   z-index: 1;
 }
+/* Style deuxieme section */
+.presentation{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+}
 .presentation p{
-  text-align: center;
-  margin-left: 40px;
-  margin-right: 40px;
+  text-align: justify;
+  margin-left: 75px;
+  margin-right: 75px;
   line-height: 2;
 }
 
@@ -73,6 +85,7 @@ h2{
   border: 1px solid black;
   width: 30%;
   padding: 10px;
+  margin-bottom: 30px;
 }
 .stars {
   display:inline-flex;
@@ -97,7 +110,7 @@ h2{
 .cover-avis{
   background-color: #f9de64;
   padding: 10px;
-  max-height: auto;
+  
 }
 /* End section avis public */
 
@@ -105,10 +118,50 @@ h2{
 footer{
   background-color: black;
   color: white;
-  height: 80px;
+  min-height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  /*position: absolute;
+  bottom: 0; left: 0; right: 0;*/
 }
+/* style deuxieme page evenement */
+.flux{
+  margin-left: 75px;
+  margin-right: 75px;
+}
+.title{
+  font-size: 50px;
+  text-align: center;
+  margin: 20px;
+}
+.calendar, .location, .echec-title{
+  line-height: 2;
+}
+.image-secondaire {
+  width: 150px;
+
+}
+.calendar, .location{
+  display: flex;
+  flex-direction:row;
+  
+}
+.adresse{
+  display: flex;
+  flex-direction: column;
+  /* width: 50%; */
+}
+.cover-echec{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.echec{
+  border: 1px solid black;
+}
+
 
 
