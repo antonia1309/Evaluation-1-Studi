@@ -65,5 +65,13 @@ footer{
   align-items: center;
   justify-content: center;
 }
-
+/* Mediaqueries */
+@media screen and (max-width: 425px){
+  .section-1, .section-2{
+    padding: 10px;
+  }
+  .date-bloc1 p{
+    padding:10px;
+  }
+}
 
