@@ -4,22 +4,15 @@ a{
   color: inherit;
 }
 
-ul, ol{
-  list-style: none;
-}
 
 * {
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
 }
 html{
   scroll-behavior: smooth;
-  height: 100%;
-}
-body{
-  min-height: 100%;
-  /*position: relative;*/
+  
 }
 
 /*Style général*/
@@ -31,7 +24,7 @@ h2{
   margin-top: 30px;
   margin-bottom: 20px;
 }
-/* Style: première ligne */
+/* START Première section */
 .container-image img{
   object-fit: cover;
   object-position: center;
@@ -41,8 +34,7 @@ h2{
  
 .container-image{
   position: relative;
-  /*top:40px;
-  border-top: 2px solid white;*/
+  
 }
 
 .container-image .container-text{
@@ -55,7 +47,9 @@ h2{
   color: white;
   z-index: 1;
 }
-/* Style deuxieme section */
+/* END Première section */
+
+/* START Deuxième section:présentation */
 .presentation{
   display: flex;
   justify-content: center;
@@ -68,8 +62,9 @@ h2{
   margin-right: 75px;
   line-height: 2;
 }
+/* END Deuxième section:présentation */
 
-/* Start Style section Avis public */
+/* START Quatrième section: Avis du public */
 .fa-star {
 	color: gray;
 	cursor: pointer;
@@ -93,12 +88,12 @@ h2{
   font-size: 2em;
   padding: 10px;
 }
-.cover-section{
+.list-avis{
   display: flex;
   justify-content: space-around;
   padding: 10px;
 }
-.cover-section p{
+.list-avis p{
   text-align: center;
 }
 .stars:hover .fa-star {
@@ -107,12 +102,13 @@ h2{
 .stars .fa-star:hover ~ .fa-star {
   color: gray;
 }
-.cover-avis{
+.container-avis{
   background-color: #f9de64;
   padding: 10px;
   
 }
-/* End section avis public */
+/* END Quatrième section: Avis du public */
+
 
 /* Footer */
 footer{
@@ -122,7 +118,4 @@ footer{
   display: flex;
   align-items: center;
   justify-content: center;
-
-  /*position: fixed;
-  bottom: 0; left: 0; right: 0;*/
 }
