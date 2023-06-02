@@ -123,45 +123,6 @@ footer{
   align-items: center;
   justify-content: center;
 
-  /*position: absolute;
+  /*position: fixed;
   bottom: 0; left: 0; right: 0;*/
 }
-/* style deuxieme page evenement */
-.flux{
-  margin-left: 75px;
-  margin-right: 75px;
-}
-.title{
-  font-size: 50px;
-  text-align: center;
-  margin: 20px;
-}
-.calendar, .location, .echec-title{
-  line-height: 2;
-}
-.image-secondaire {
-  width: 150px;
-
-}
-.calendar, .location{
-  display: flex;
-  flex-direction:row;
-  
-}
-.adresse{
-  display: flex;
-  flex-direction: column;
-  /* width: 50%; */
-}
-.cover-echec{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  
-}
-.echec{
-  border: 1px solid black;
-}
-
-
-
